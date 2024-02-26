@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <h1 class="s1">One</h1>
+    <h1 class="s2">Two</h1>
+    <h1 class="s3">Three</h1>
+    <h1 class="s4">Four</h1>
+    <button onclick="func()">Click</button>
+
+    <script>
+        function func()
+        {
+                 $(document).ready(function(){
+
+                       $("h1").filter(function(index){
+
+                                if(index==1 || index==3)
+                                {
+                                   return true;
+                                }
+                       }).css("background","blue");
+                 })
+        }
+</script>
+</body>
+</html>

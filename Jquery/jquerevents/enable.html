@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" name="name" value="Seven Mentor" disabled><br>
+    <input type="text" name="lastname" value="Seven Mentor" ><br>
+    <input type="text" name="email" value="Seven Mentor" disabled><br>
+    <input type="text" value="Submit" disabled="disabled"><br>
+
+    <button>Click</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(":disabled").css({"background-color":"blue","border":"1px black solid"})
+                $("disabled").prop("disabled",false)
+            })
+        })
+    </script>
+
+
+  
+</body>
+</html>

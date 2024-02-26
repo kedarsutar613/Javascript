@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <h1>Learn to Html css and js</h1>
+        <h2 id="child">Replace</h2>
+
+    </div>
+    <button onclick="show()">Click Here</button>
+    <script>
+        function show(){
+            var x=document.createElement("h1");
+            var y=document.createTextNode("and node");
+            x.appendChild("y");
+
+            var child=document.getElementById("child");
+
+            var parent=document.getElementById("parent");
+            parent.replaceChild(x,child);
+        }
+    </script>
+</body>
+</html>

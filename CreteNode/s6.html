@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dynamically ADD Element</h1>
+    <div id="menu">
+
+    </div>
+    <button onclick="show()">Clic kHere</button>
+    <script>
+        function show(){
+        var sub=["Html","CSS","js","Node"];
+        var ul=document.createElement("ul");
+
+        for(let i=0; i<sub.length; i++){
+            var li=document.createElement("li");
+            li.innerHTML=sub[i];
+            ul.appendChild(li);
+        }
+        document.getElementById("menu").appendChild(ul);
+    }
+    </script>
+</body>
+</html>

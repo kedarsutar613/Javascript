@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #d1{
+            background-color: aqua;
+            border: black 2px;
+        }
+        #d2{
+            background-color: blueviolet;
+            border: 2px;
+
+        }
+        #f3{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+  
+   <div id="d1">click Here</div>  
+   <div id="f2">Wellcome to my class</div>
+
+   <div id="d2">click Here</div>  
+   <div id="f3">Wellcome to my class</div>
+
+   <script>
+    $(document).ready(function(){
+        $("#d1").click(function(){
+            $('#f2').slideToggle(4000);
+        });
+    })
+
+    $(document).ready(function(){
+        $("#d2").click(function(){
+            $('#f3').slideDown(4000);
+        });
+    })
+   </script>
+
+    
+</body>
+</html>

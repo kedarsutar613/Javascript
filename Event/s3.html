@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+
+
+
+        <input type="text" id="d1"  name="user"  placeholder="Enetr name" >
+
+        <br><br>
+
+        <input type="text" id="d2" name="password" placeholder="Enetr name" >
+        <input type="button" value="submit"  onclick="show()">
+
+        <div id="d3"></div>
+
+      </form>
+ <script>
+       function show(){
+         var x=document.getElementById("d1").value;
+         var y=document.getElementById("d2").value;
+
+         alert(x);
+         document.getElementById("d3").innerHTML="Wellcome"+x;
+
+       }
+
+ </script>
+</body>
+</html>

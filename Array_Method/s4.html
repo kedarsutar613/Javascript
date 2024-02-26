@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr=["one","two","four","five","six"];
+        document.write("<br>Before Splish:="+arr);
+        var res=arr.splice(3,0,"seven");
+        document.write("<br>After Splish:="+arr);
+
+        var arr=["one","two","four","five"];
+        var res=arr.splice(3,2,"seven");
+        document.write("<br>After Splish:="+arr);
+        document.write("<br>After Splish remove element:="+res);
+
+        var arr=["one","two","four","five"];
+        var res=arr.splice(3,0,"six","seven");
+        document.write("<br>After Splish:="+arr);
+
+        
+        var arr=["one","two","four","five"];
+        var res=arr.splice(3);
+        document.write("<br>After Splish:="+arr);
+        document.write("<br>After Splis removed :="+res);
+
+
+
+
+
+
+
+
+
+        
+
+
+       
+       
+    </script>
+</body>
+</html>

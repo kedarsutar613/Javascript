@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Choose Ansd Fewaret City</h1>
+   <input type="radio" id="Vita" value="Vita" name="city">Vita
+   <input type="radio" id="Mumbai" value="Mumbai" name="city">Mumbai
+   <input type="radio" id="Pune" value="Pune" name="city">Pune
+   <br></br>
+<button type="button" onclick="show()">Submit</button>
+<h2 id="disp"></h2>
+<h2 id="Error"></h2>
+
+
+<script>
+    function show(){
+        var a=document.querySelector('input[name="city"]:checked');
+        if(a !=null){
+            document.getElementById("disp").innerHTML=getselectval.value +"city is selectead";
+        }else{
+            document.getElementById("Error").innerHTML="*you have not selectead any city"
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learn to Html css and js</h1>
+    <button onclick="show()">Click Here</button>
+
+    <script>
+        function show(){
+            var x=document.createElement("h1");
+            var text=document.createTextNode("And Node");
+
+            x.appendChild(text)
+            document.body.appendChild(x);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Choose Ansd Fewaret City</h1>
+   <input type="radio" id="Vita" value="Vita">Vita
+   <input type="radio" id="Mumbai" value="Mumbai">Mumbai
+   <input type="radio" id="Pune" value="Pune">Pune
+   <br></br>
+<button type="button" onclick="show()">Submit</button>
+<h2 id="disp"></h2>
+<h2 id="Error"></h2>
+
+<script>
+    function show()
+    {
+        if(document.getElementById("Vita").checked){
+            document.getElementById("disp").innerHTML=document.getElementById("Vita").value
+
+        }else{
+            if(document.getElementById("Mumbai").checked){
+            document.getElementById("disp").innerHTML=document.getElementById("Mumbai").value
+        }else{
+            if(document.getElementById("Pune").checked){
+            document.getElementById("disp").innerHTML=document.getElementById("Pune").value
+        }else
+        {
+            document.getElementById("Error").innerHTML="you have not selectead city"
+            document.getElementById("Error").style.color="red";
+                }
+    }
+}
+    }
+</script>
+</body>
+</html>

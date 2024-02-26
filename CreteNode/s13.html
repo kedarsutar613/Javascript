@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+          <button onclick="show()">Add table</button>
+
+          <div id="d1"> 
+
+              
+          </div>
+
+
+         <script>
+
+                   let arr =[
+
+                       {
+                           id:1,
+                           name:'meea',
+                           salary:2000
+                       },
+                       {
+                           id:2,
+                           name:'teea',
+                           salary:2000
+                       },
+                       {
+                           id:3,
+                           name:'reea',
+                           salary:2000
+                       }
+
+                   ]
+
+
+
+                   function show()
+                   {
+                       genratTable(arr)
+                   }
+
+                  function genratTable(arr)
+                  {
+                             let table = `
+                                 <table>
+                                <tr>
+                                    <th>id</th>
+                                    <th>name</th>
+                                    <th>salary</th>
+                                </tr>
+                                <tr>
+                                    <td>${arr[0].id}</td>
+                                    <td>${arr[0].name}</td>
+                                    <td>${arr[0].salary}</td>
+                                </tr>
+                                <tr>
+                                    <td>${arr[1].id}</td>
+                                    <td>${arr[1].name}</td>
+                                    <td>${arr[1].salary}</td>
+                                </tr>
+                            </table>
+                             
+                             
+                             `
+                             
+                             document.getElementById('d1').innerHTML=table;
+                             
+                             
+
+
+                  }
+
+
+
+         </script>
+    
+</body>
+</html>

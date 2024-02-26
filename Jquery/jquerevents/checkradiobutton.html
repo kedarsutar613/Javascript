@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="d2">
+        <h2>You eligible for intertip</h2>
+        <input type="radio" name="lang" id="y">Y
+        <input type="radio" name="lang" id="n">N
+    </div>
+    <div class="d2">
+        <h2>select you gender</h2>
+        <input type="button" class="yes" value="yes">
+        <input type="button" class="no" value="no">
+        <input type="button" class="reset" value="reset">
+    </div>
+
+    
+    <script>
+        $(document).ready(function(){
+            $(".yes").click(function(){
+                $("#y").prop("checked",true);
+            })
+        });
+
+        $(document).ready(function(){
+            $(".no").click(function(){
+                $("#n").prop("checked",true);
+            })
+        });
+
+        
+        $(document).ready(function(){
+            $(".reset").click(function(){
+                $("#n").prop("checked",false);
+                $("#y").prop("checked",false);
+            })
+        });
+    </script>
+    
+</body>
+</html>

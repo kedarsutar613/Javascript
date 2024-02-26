@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+           div{
+              width:100px;
+              height: 50px;
+              border: 2px solid red;
+              margin-bottom: 20px;
+              text-align: center;
+             
+           }
+     </style>
+</head>
+<body>
+
+                <div class="demo">
+                           
+                </div>
+                <div class="demo">
+                  
+                 </div>
+
+
+
+        <!-- getElementByClassNAme -->
+        <script>
+
+                var x =document.getElementsByClassName("demo");
+               
+                x[0].innerHTML="first div";
+                x[1].innerHTML="secound div";
+
+                for(let i=0 ; i<x.length ;i++)
+                {
+
+                       x[i].style.background="blue";
+                       x[i].style.color="white";
+                       
+                }
+                    
+              
+                console.log(x);
+        </script>
+    
+</body>
+</html>
+
+<!-- 
+
+the getElemntByClassName()  is used to return for slecting or getting the elemnts through
+their class name value . this dom method return an array like object
+that consit  of all the elements  having the specified classname.
+
+
+ -->
+
+Pooja Ghodekar, 15 min
+//  var x =Math.random();
+                //  document.write(x)
+                //  document.write("<br>")
+                //  var y =10*Math.random();
+                //  document.write(y)
+                //  document.write("<br>")
+                //  var z=Math.floor(y);
+                //  document.write(z);
+
+                //  document.write("<br>")
+                //  var n =Math.floor(10*Math.random());
+                //  document.write(n)
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .box {
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      border-radius: 5px;
+      box-shadow: 5px 5px rgb(0 0 0 / 0.2);
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 8px;
+    }
+
+    .parent {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+  </style>
+</head>

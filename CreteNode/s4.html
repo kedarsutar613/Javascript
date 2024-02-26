@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dd">
+        <h1 id="d1">Leaarn to html css and js</h1>
+        <h2 id="d2">something</h2>
+
+    </div>
+    <button onclick="show()">Click Here</button>
+
+    <script>
+        function show(){
+            var parent=document.getElementById("dd");
+            var child=document.getElementById("d2");
+            parent.removeChild(child);
+        }
+    </script>
+</body>
+</html>

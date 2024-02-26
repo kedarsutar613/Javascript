@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="show()">Click Here</button>
+    <h1 id="d1"></h1>
+    <script>
+        function show(){
+            var a = prompt("Enter the Value 1..."); 
+            var b = prompt("Enter the value 2...");
+
+            var num = parseInt(a);
+            var num1 = parseInt(b);
+             
+            var ans = num + num1;
+            document.getElementById("d1").innerHTML = "Addition: " + ans;
+        }
+    </script>
+</body>
+</html>

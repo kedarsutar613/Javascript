@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function two(n1,callback)
+        {
+           document.write("<br>function two execution"+n1)
+           callback();
+        }
+        var num=22;
+        two(22, ()=>{
+            document.write("function one execution..");
+        })
+    </script>
+</body>
+</html>

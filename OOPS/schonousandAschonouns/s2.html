@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="start">start</button>
+    <button onclick="stop">stop</button>
+    <div id="d1"></div>
+    <script>
+      var logi;
+      function start()
+      {
+        logi=setInterval(Time,1000);
+      }
+      function Time()
+      {
+        var x=new Data();
+          var y=x.tolocaleTimestring();
+          document.getElementById("d1").innerHTML="<br>"+y;
+      }
+      function stop()
+      {
+        clearInterval(logic);
+      }
+    </script>
+</body>
+</html>

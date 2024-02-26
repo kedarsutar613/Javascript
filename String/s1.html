@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var s1="seven mentore";
+
+//charAt()  this method return the charecter at the gievn index
+       
+document.write("<br> char at :- "+  s1.charAt(3));
+            
+//concat() this method use to concatinate or join two string
+
+var s1="seven"
+var s2="mentore"
+ s1=s1.concat(" ");
+document.write("<br> concatination :- "+ s1.concat(s2));
+
+
+//indexOf()  method retunrs the index of position of given string
+var s1="welcome to my class";
+
+ var n=s1.indexOf("come");
+
+ document.write("<br> index of:-" + n);
+
+// lastindexof()  method return the the last index  position of given string
+
+var s1="welcome to my class .come into my class.come  room";
+
+var n=s1.lastIndexOf("come");
+
+document.write("<br>last index of:-" + n);
+
+
+//uppercase()  and lowercase()
+
+var s="SEVEN";
+
+
+document.write("<br>lower case :-" + s.toLocaleLowerCase());
+
+var s="seven";
+
+
+document.write("<br>lower case :-" + s.toLocaleUpperCase());
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class car
+        {
+          constructor(){
+            document.write("<br>default constructor")
+          }
+          details(x,y)
+          {
+            var color=x;
+            var price=y;
+            document.write("<br>car class"+color+" "+price);
+          }
+        }
+        var car1=new car();
+        car1.details("red",22222);
+        var car2=new car();
+        car2.details("blue",555555);
+        
+
+    </script>
+</body>
+</html>

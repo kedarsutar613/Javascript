@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         
+      <input type="search"  id="d2" placeholder="Serch">
+
+         <div id="d1"></div>
+         <h1 id="demo">MouseOver</h1>
+
+         <script>
+           
+           document.getElementById("d2").addEventListener("search",()=>{
+            
+            document.getElementById("d1").innerHTML="you serching a data";
+          })
+
+
+            document.getElementById("d2").addEventListener("keyup" ,()=>{
+
+            document.getElementById("d2").style.color="red";
+            })
+
+
+            document.getElementById("demo").addEventListener("mouseover" ,()=>{
+
+            document.getElementById("demo").style.visibility="hidden";
+            })
+
+document.getElementById("demo").addEventListener("mouseleave" ,()=>{
+
+document.getElementById("demo").style.visibility="visible";
+})
+
+
+         </script>
+      
+</body>
+</html>

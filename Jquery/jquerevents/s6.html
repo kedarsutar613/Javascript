@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="d1">
+        <h1>Check/Uncheck Jquery</h1>
+    </div>
+
+    <div class="d2">
+        <h2>selectead you gender</h2>
+        <input type="radio" name="gender" id="male">male
+        <input type="radio" name="gender" id="female">female
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("male").prop("checked",true)
+        });
+    </script>
+</body>
+</html>

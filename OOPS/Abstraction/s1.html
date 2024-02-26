@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function vehical(){
+            this.vehicalname="xyz";
+            throw new Error("you not creat instant of abstract class")
+        }
+        vehical.prototype.show=function(){
+            return "verical is"+ this.vehicalname;
+        }
+
+        function Bike(vericalname)
+        {
+            this.vericalname=vericalname
+        }
+        Bike.prototype=Object.create(vehical.prototype);
+        var bike=new Bike("Hero Honda");
+        document.write(Bike.show());
+    </script>
+</body>
+</html>

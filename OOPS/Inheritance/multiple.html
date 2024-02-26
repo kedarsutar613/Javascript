@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class animal{
+            eating(){
+                document.write("<br>animal is eating");
+            }
+        }
+        class dog extends animal
+        {
+            braking(){
+                document.write("<br>can brek");
+            }
+          
+        }
+        class germenshepart extends dog
+        {
+            shap(){
+                document.write("<br>different shape...");
+            }
+        }
+        var e1=new germenshepart();
+        e1.eating();
+        e1.braking();
+        e1.shap();
+    </script>
+</body>
+</html>

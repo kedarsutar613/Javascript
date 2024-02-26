@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+     <form name="f1" onsubmit=" return show()">
+
+        <input type="text" id="d2" name="username" placeholder="ENter the username">  
+        <span id="d1"></span>
+         <br><br>
+        <input type="text" id="d4"  name="password" placeholder="enetr the password">
+        <span id="d3"></span>
+        <br><br>
+        <input type="submit" value="Register">
+
+     </form>
+
+     <script>
+
+           function show()
+           {
+                var name= document.f1.username.value;
+                var password=document.f1.password.value;
+
+                    if(name==null  || name=="")
+                    {
+                        // alert("plz enter the name first");
+                       var a=  document.getElementById("d1");
+                       a.innerHTML="*"
+                       a.style.color="red";
+                       document.getElementById("d2").style.border="1px solid red";
+                           
+
+                        return false;
+                    }else
+                    if(password.length<8)
+                    {
+                        //  alert("alteast enter 8 charecter of passwr")  
+                        var a=  document.getElementById("d3");
+                       a.innerHTML="*"
+                       a.style.color="red";
+                       document.getElementById("d4").style.border="1px solid red";
+                           
+                           return false; 
+                        }
+
+
+           }
+     </script>
+    
+</body>
+</html>

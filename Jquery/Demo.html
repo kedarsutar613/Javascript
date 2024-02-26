@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Welcome to jquery</h1>
+    <h1 class="c1">My class</h1>
+    <h1 id="i1">My id</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <script>
+        $(document).ready(function(){
+            $('h1').css("background-color","red");
+        });
+
+        $(document).ready(function(){
+            $('.c1').css("background-color","pink");
+        });
+        $(document).ready(function(){
+            $('#i1').css("background-color","pink");
+        });
+
+        $(document).ready(function(){
+            $('h1,p').css("background-color","blue");
+        });
+    </script>
+    
+</body>
+</html>

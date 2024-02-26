@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Wellcome to my class...
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, non.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, nam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium?</p>
+    <button onclick="show()">Click</button>
+    <script>
+       function show(){
+        var x=document.getElementsByTagName("p")
+
+        for(let i=0; i<=x.length; i++)
+        {
+            x[i].style.display="block";
+            x[i].style.color="red";
+        }
+       }
+    </script>
+</body>
+</html>

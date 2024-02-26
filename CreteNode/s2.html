@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1" style="border: 1px solid black; padding: 20px;">
+    <h4 id="hed1">Something</h4>
+    <h1>Learn HTML CSS and JS</h1>
+    <p id="p1">Lorem ipsum dolor sit amet.</p>
+</div>
+<br></br>
+
+<button onclick="show()">Click Here</button>
+
+<script>
+    function show(){
+        var btn=document.createElement("button");
+        btn.innerHTML="click here";         
+        var ele=document.getElementById("d1");
+        var child=document.getElementById("p1");
+        
+        ele.insertBefore(btn,child);
+        
+    }
+</script>
+
+</body>
+</html>

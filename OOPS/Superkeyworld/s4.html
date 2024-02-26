@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class xyz{
+            show(){
+                return "Wellcome"
+            }
+        }
+        class Abc extends xyz{
+            disp(){
+                return this.show()+" "+"meena";
+            }
+        }
+        var obj=new Abc();
+
+        document.write(obj.disp())
+    </script>
+</body>
+</html>

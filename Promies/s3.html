@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        new Promise((resv,res)=>{
+            setTimeout(()=>resv(1),1000);
+        }).then(function(res){
+            alert(res)
+            return new Promise((resv,rej)=>{
+                setTimeout(()=>resv(res*2),1000);
+
+            });
+        }).then(function(res){
+            alert(res)
+            return new Promise((resv,rej)=>{
+                setTimeout(()=>resv(res*2),1000);
+            });
+        }).then(function(res){
+            alert(res)
+            return new Promise((resv,rej)=>{
+                setTimeout(()=>(res*2),1000);
+            });
+        })
+    </script>
+</body>
+</html>

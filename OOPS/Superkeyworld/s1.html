@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal
+        {
+            constructor(){
+                document.write("parent class constructer call")
+            }
+        }
+        class pets extends Animal
+        {
+            constructor()
+            {
+                super();
+                document.write("<br>child class constructer invoke")
+            }
+        }
+        var e1=new pets();
+        
+    </script>
+</body>
+</html>

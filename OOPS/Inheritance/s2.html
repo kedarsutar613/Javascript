@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Single Inheritance
+        class car{
+            car(){
+                document.write("car can be drive");
+
+            }
+        }
+        class color extends car{
+            color1(){
+                document.write("color can be red...");
+            }
+            prive(){
+                document.write("BMW car price 200000")
+            }
+        }
+        var d1=new color();
+        d1.car();
+        d1.color1();
+        d1.prive();
+    </script>
+</body>
+</html>

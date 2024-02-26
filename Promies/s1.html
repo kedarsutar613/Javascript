@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj= new Promise(function(resolve,reject){
+            var num=53;
+            if(num==5)
+            {
+                resolve();
+            }else
+            {
+                
+                reject();
+            }
+        });
+        obj.then(function(){
+            document.write("promise resoled......");
+        }).catch(function(){
+            document.write("promise is rejectead");
+        });
+    </script>
+</body>
+</html>
+<!-- Promise=
+ promise in real life express a trust between tow or more person and assurance that a particular thing 
+ will surely happenan
+ in javascript promise is an objet which assurance to produce a single value in the feature 
+
+ 1.A promise can never fall or success or more this can happen only once
+ 2.Apromise can nither switch from success to failure or failure to success if promise has either succed or 
+ failed and after sometime if any suuccess/failure callback is added the corret callback will br invoke  -->

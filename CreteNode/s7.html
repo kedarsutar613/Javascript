@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>
+        How to create an image element
+        dynamically using JavaScript ?
+    </title>
+</head>
+
+<body id="body" style="text-align:center;">
+
+
+    <h3>
+        Click on the button to add image element
+    </h3>
+
+    <button onclick="Fun()"> click here</button>
+
+    <h2 id="result" style="color:green;"></h2>
+
+    <script>
+        let res = document.getElementById('result');
+
+        function Fun() {
+            let img=document.createElement('img');
+            img.src ='/imge/img1.jpg';
+            document.getElementById('body').appendChild(img);
+            res.innerHTML="imge "
+            // let img = document.createElement('img');
+            // img.src ='/imge/img1.jpg';
+            // document.getElementById('body').appendChild(img);
+            // res.innerHTML = "Image Element Added.";
+        }
+    </script>
+</body>
+
+</html>

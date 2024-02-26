@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=["aa","bb","cc","dd"];
+        arr1.pop("dd");
+        document.write(arr1);
+
+        document.write("<br>Push:=");
+        arr1.push("hh");
+        document.write(arr1);
+
+        document.write("<br>UnShipt:=");
+        arr1.unshift("kk");
+        document.write(arr1);
+
+        document.write("<br>shipt:=");
+        arr1.shift("");
+        document.write(arr1);
+
+        document.write("<br>index:=");
+         var res =arr1.indexOf("cc");
+        document.write(res);
+
+        document.write("<br>index:=");
+        var res=arr1.indexOf("bb",1);
+        document.write(res);
+
+        document.write("<br>index:=");
+        var res=arr1.indexOf("oo");
+        document.write(res);
+
+
+    </script>
+</body>
+</html>

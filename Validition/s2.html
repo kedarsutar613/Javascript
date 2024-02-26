@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+     <form name="f1" onsubmit=" return show()">
+
+        <input type="text" name="username" placeholder="ENter the username">
+         <br><br>
+        <input type="text" name="password" placeholder="enetr the password">
+        <br><br>
+        <input type="text" name="password1" placeholder="Re type password">
+        <br><br>
+        <input type="submit" value="Register">
+
+     </form>
+
+     <script>
+
+           function show()
+           {
+                var name= document.f1.username.value;
+                var password=document.f1.password.value;
+                var password1=document.f1.password1.value;
+
+                    if(name==null  || name=="")
+                    {
+                        alert("plz enter the name first");
+                        return false;
+                    }else
+                    if(password==password1)
+                    {
+                        
+                           return true; 
+                   }else
+                   {
+                    alert("incorrect password password must be same")
+                    return false  
+                   }
+
+
+           }
+     </script>
+    
+</body>
+</html>

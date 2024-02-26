@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        new Promise(function(resv,rej){
+            setTimeout(function(){
+                resv(1)
+            },1000)
+        }).then(function(res){
+            alert(res);
+            return res*2;
+        }).then(function(res){
+            alert(res);
+            return res*2;
+        }).then(function(res){
+            alert(res);
+            return res*2;
+        });
+    </script>
+</body>
+</html>

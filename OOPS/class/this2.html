@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //this is set the newly created object
+        //current class instant
+       class emp{
+        constructor(id,name)
+        {
+            this.id=id
+            this.name=name
+        }
+        disp(){
+            document.write("<br>"+this.id+" "+this.name);
+        }
+       }
+       var e1=new emp(1,"menaa");
+       e1.disp();
+       var e2=new emp(2,"meena");
+       e2.disp();
+
+       alert(e1.name);
+    </script>
+</body>
+</html>

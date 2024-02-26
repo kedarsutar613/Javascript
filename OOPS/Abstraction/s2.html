@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function person(){
+            this.personame=personame;
+             throw new Error("can not creat the instant of abstrac class")
+        }
+
+        person.prototype.disp=function()
+        {
+            return "name of person :=" +this.personame;
+        }
+        function Empoloyee(personame)
+        {
+            this.personame=personame;
+        }
+        Empoloyee.prototype=Object.create(person.prototype);
+        var Emp=new Empoloyee("Meena");
+
+          document.write(Emp instanceof person);
+          document.write(Emp instanceof Empoloyee);
+
+          document.write("<br>" +Emp.disp());
+    </script>
+    
+</body>
+</html>

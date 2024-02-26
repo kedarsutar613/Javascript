@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" method="get">
+        <input type="text" name="fname" placeholder="Enter your Name">
+        <input type="text" name="lname" placeholder="enter the name">
+        <input type="Submit" onclick="show()" value="Submit">
+    </form>
+    <script>
+
+        function show(){
+            var name=document.from1.fname.value;
+            var lnme=document.from1.lname.value;
+
+            alert("Wellcome"+name+" "+lnmae)
+        }
+    </script>
+</body>
+</html>
